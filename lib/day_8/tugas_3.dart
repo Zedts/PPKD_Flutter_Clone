@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class TugasDart3 extends StatefulWidget {
-  const TugasDart3({super.key});
+class TugasFlutter3 extends StatefulWidget {
+  const TugasFlutter3({super.key});
 
 // =========================AI Help======================
   @override
-  State<TugasDart3> createState() => _TugasDart3State();
+  State<TugasFlutter3> createState() => _TugasFlutter3State();
 }
 
-class _TugasDart3State extends State<TugasDart3> {
+class _TugasFlutter3State extends State<TugasFlutter3> {
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
 // ======================================================
