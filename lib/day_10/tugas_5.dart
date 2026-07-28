@@ -88,14 +88,14 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                   _showExtraDescription = !_showExtraDescription;
                 });
               },
-              child: const Text('Tampilkan deskripsi tambahan'),
+              child: const Text('Deskripsi tambahan'),
             ),
             if (_showExtraDescription)
               const Padding(
                 padding: EdgeInsets.only(top: 8.0),
                 child: Text(
-                  'Ini adalah paragraf deskripsi tambahan tentang aplikasi Anda. '
-                  'Paragraf ini hanya muncul ketika tombol teks diklik.',
+                  'Ini adalah paragraf deskripsi tambahan. '
+                  'HALO HALO HALO',
                   style: TextStyle(fontSize: 14),
                 ),
               ),
