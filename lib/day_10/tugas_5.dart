@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class TugasFlutter5 extends StatefulWidget {
@@ -19,7 +21,7 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Interaksi Flutter'),
+        title: Text('Interaksi Flutter'),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
@@ -29,10 +31,10 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
             _gestureMessage = 'Counter dikurangi dengan FAB';
           });
         },
-        child: const Icon(Icons.remove),
+        child: Icon(Icons.remove),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -43,11 +45,11 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                   _showSecretText = !_showSecretText;
                 });
               },
-              child: const Text('Klik Saya!'),
+              child: Text('Klik Saya!'),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
             if (_showSecretText)
-              const Text(
+              Text(
                 'Halo, saya Developer!',
                 style: TextStyle(
                   fontSize: 16,
@@ -55,7 +57,7 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                 ),
               ),
 
-            const SizedBox(height: 16),
+            SizedBox(height: 16),
 
             // IconButton
             Row(
@@ -71,15 +73,15 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                     });
                   },
                 ),
-                const SizedBox(width: 8),
+                SizedBox(width: 8),
                 Text(
                   _isFavorite ? 'Tersimpan di Favorit' : 'Belum disukai',
-                  style: const TextStyle(fontSize: 14),
+                  style: TextStyle(fontSize: 14),
                 ),
               ],
             ),
 
-            const SizedBox(height: 16),
+            SizedBox(height: 16),
 
             // TextButton
             TextButton(
@@ -88,10 +90,10 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                   _showExtraDescription = !_showExtraDescription;
                 });
               },
-              child: const Text('Deskripsi tambahan'),
+              child: Text('Deskripsi tambahan'),
             ),
             if (_showExtraDescription)
-              const Padding(
+              Padding(
                 padding: EdgeInsets.only(top: 8.0),
                 child: Text(
                   'Ini adalah paragraf deskripsi tambahan. '
@@ -100,7 +102,7 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                 ),
               ),
 
-            const SizedBox(height: 24),
+            SizedBox(height: 24),
 
             // InkWell
             InkWell(
@@ -108,7 +110,7 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                 setState(() {
                   _inkWellMessage = 'Sentuhan terdeteksi pada kotak InkWell';
                 });
-                print('Sentuhan terdeteksi (InkWell)');
+                log('Sentuhan terdeteksi (InkWell)');
               },
               child: Container(
                 width: double.infinity,
@@ -118,7 +120,7 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 alignment: Alignment.center,
-                child: const Text(
+                child: Text(
                   'Kotak InkWell (Tap di sini)',
                   style: TextStyle(
                     color: Colors.white,
@@ -127,14 +129,14 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                 ),
               ),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
             if (_inkWellMessage.isNotEmpty)
               Text(
                 _inkWellMessage,
-                style: const TextStyle(fontSize: 14),
+                style: TextStyle(fontSize: 14),
               ),
 
-            const SizedBox(height: 24),
+            SizedBox(height: 24),
 
             // GestureDetector
             GestureDetector(
@@ -143,21 +145,21 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                   _counter += 1;
                   _gestureMessage = 'Ditekan sekali';
                 });
-                print('Ditekan sekali');
+                log('Ditekan sekali');
               },
               onDoubleTap: () {
                 setState(() {
                   _counter += 2;
                   _gestureMessage = 'Ditekan dua kali';
                 });
-                print('Ditekan dua kali');
+                log('Ditekan dua kali');
               },
               onLongPress: () {
                 setState(() {
                   _counter += 3;
                   _gestureMessage = 'Tahan lama';
                 });
-                print('Tahan lama');
+                log('Tahan lama');
               },
               child: Container(
                 width: double.infinity,
@@ -169,18 +171,18 @@ class _TugasFlutter5State extends State<TugasFlutter5> {
                 alignment: Alignment.center,
                 child: Text(
                   'Angka: $_counter',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: 8),
             if (_gestureMessage.isNotEmpty)
               Text(
                 'Aksi terakhir: $_gestureMessage',
-                style: const TextStyle(fontSize: 14),
+                style: TextStyle(fontSize: 14),
               ),
           ],
         ),
