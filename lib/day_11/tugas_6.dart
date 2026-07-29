@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Tugas6 extends StatefulWidget {
   const Tugas6({super.key});
@@ -35,7 +36,7 @@ class _Tugas6State extends State<Tugas6> {
                     SizedBox(height: 20),
                     Text(
                       'Welcome back!',
-                      style: TextStyle(
+                      style: GoogleFonts.workSans(
                         fontSize: 32,
                         fontWeight: FontWeight.w400,
                         color: Colors.black,
@@ -67,7 +68,9 @@ class _Tugas6State extends State<Tugas6> {
                     });
                   },
                   icon: Icon(
-                    obscurePassword ? Icons.visibility_off : Icons.visibility,
+                    obscurePassword 
+                    ? Icons.visibility_off 
+                    : Icons.visibility,
                     color: Colors.grey,
                   ),
                 ),
@@ -81,7 +84,7 @@ class _Tugas6State extends State<Tugas6> {
                   onPressed: () {},
                   child: Text(
                     'Forgot password?',
-                    style: TextStyle(
+                    style: GoogleFonts.workSans(
                       fontSize: 16,
                       color: Colors.black,
                       fontWeight: FontWeight.w400,
@@ -113,7 +116,7 @@ class _Tugas6State extends State<Tugas6> {
                   ),
                   child: Text(
                     'Login',
-                    style: TextStyle(
+                    style: GoogleFonts.workSans(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
                       color: Colors.white,
@@ -137,7 +140,7 @@ class _Tugas6State extends State<Tugas6> {
                     padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Text(
                       'or',
-                      style: TextStyle(
+                      style: GoogleFonts.workSans(
                         fontSize: 18,
                         color: Colors.grey.shade700,
                       ),
@@ -176,7 +179,7 @@ class _Tugas6State extends State<Tugas6> {
               Center(
                 child: RichText(
                   text: TextSpan(
-                    style: TextStyle(
+                    style: GoogleFonts.workSans(
                       fontSize: 16,
                       color: Colors.black,
                     ),
@@ -184,8 +187,10 @@ class _Tugas6State extends State<Tugas6> {
                       TextSpan(text: "Don't have an account? "),
                       TextSpan(
                         text: 'Sign up',
-                        style: TextStyle(
+                        style: GoogleFonts.workSans(
+                          fontSize: 16,
                           fontWeight: FontWeight.w700,
+                          color: Colors.black,
                         ),
                       ),
                     ],
@@ -211,10 +216,13 @@ class _Tugas6State extends State<Tugas6> {
   }) {
     return TextField(
       obscureText: obscureText,
-      style: TextStyle(fontSize: 16),
+      style: GoogleFonts.workSans(
+        fontSize: 16,
+        color: Colors.black,
+      ),
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: TextStyle(
+        hintStyle: GoogleFonts.workSans(
           fontSize: 16,
           color: Colors.black,
           fontWeight: FontWeight.w400,
@@ -251,9 +259,20 @@ class NextPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Next Page')),
+      appBar: AppBar(
+        title: Text(
+          'Next Page',
+          style: GoogleFonts.workSans(),
+        ),
+      ),
       body: Center(
-        child: Text('Ini halaman berikutnya setelah Login.'),
+        child: Text(
+          'Ini halaman berikutnya setelah Login.',
+          style: GoogleFonts.workSans(
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
       ),
     );
   }
