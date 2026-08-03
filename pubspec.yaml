@@ -41,6 +41,9 @@ dependencies:
   # Google Font
   google_fonts: ^8.2.0
 
+  # INTL
+  intl: ^0.20.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
