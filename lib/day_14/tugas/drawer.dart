@@ -3,7 +3,9 @@ import 'package:ppkd_b7/day_14/tugas/drawer_menu/checkbox.dart';
 import 'package:ppkd_b7/day_14/tugas/drawer_menu/datepicker.dart';
 import 'package:ppkd_b7/day_14/tugas/drawer_menu/dropdown.dart';
 import 'package:ppkd_b7/day_14/tugas/drawer_menu/switch.dart';
-import 'package:ppkd_b7/day_14/tugas/drawer_menu/timepicker.dart';
+import 'package:ppkd_b7/day_15/list.dart';
+import 'package:ppkd_b7/day_15/list_model.dart';
+import 'package:ppkd_b7/day_15/list_of_map.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 class Tugas7HomePage extends StatefulWidget {
@@ -28,7 +30,9 @@ class _Tugas7HomePageState extends State<Tugas7HomePage> {
     SwitchDrawer(),
     DropdownDrawer(),
     DatepickerDrawer(),
-    TimePickerDrawer(),
+    ListDataDay15(),
+    ListOfMapDay15(),
+    ListModel15(),
   ];
 
   @override
@@ -70,10 +74,24 @@ class _Tugas7HomePageState extends State<Tugas7HomePage> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.timelapse),
-              title: Text("Atur pengingat"),
+              leading: Icon(Icons.list),
+              title: Text("List"),
               onTap: () {
                 changeBottom(4);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.list),
+              title: Text("List of map"),
+              onTap: () {
+                changeBottom(5);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.list),
+              title: Text("List model"),
+              onTap: () {
+                changeBottom(6);
               },
             ),
           ],
