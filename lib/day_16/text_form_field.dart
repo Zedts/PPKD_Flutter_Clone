@@ -1,7 +1,6 @@
 import 'package:lottie/lottie.dart';
 
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_13/drawer.dart';
 import 'package:ppkd_b7/day_16/home_abal_abal.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
