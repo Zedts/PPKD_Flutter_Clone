@@ -44,6 +44,9 @@ dependencies:
   # INTL
   intl: ^0.20.3
 
+  # Lottie
+  lottie: ^3.5.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -70,6 +73,7 @@ flutter:
     - assets/images/
     - assets/logo/
     - assets/images/icons/
+    - assets/animations/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
