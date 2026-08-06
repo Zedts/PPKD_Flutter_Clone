@@ -1,7 +1,7 @@
 import 'package:lottie/lottie.dart';
 
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_16/tugas/home_tugas.dart';
+import 'package:ppkd_b7/study/day_16/tugas/home_tugas.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 class TugasTextFormField extends StatefulWidget {

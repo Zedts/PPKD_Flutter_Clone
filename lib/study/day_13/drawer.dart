@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_13/input_widget/checkbox.dart';
-import 'package:ppkd_b7/day_6/expanded.dart';
-import 'package:ppkd_b7/day_8/stack.dart';
+import 'package:ppkd_b7/study/day_13/input_widget/checkbox.dart';
+import 'package:ppkd_b7/study/day_6/expanded.dart';
+import 'package:ppkd_b7/study/day_8/stack.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 class DrawerDay13 extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_15/tugas/models/product.dart';
+import 'package:ppkd_b7/study/day_15/tugas/models/product.dart';
 
 class TugasListModel extends StatelessWidget {
   TugasListModel({super.key});

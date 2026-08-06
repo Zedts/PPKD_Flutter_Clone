@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_14/tugas/drawer_menu/checkbox.dart';
-import 'package:ppkd_b7/day_14/tugas/drawer_menu/datepicker.dart';
-import 'package:ppkd_b7/day_14/tugas/drawer_menu/dropdown.dart';
-import 'package:ppkd_b7/day_14/tugas/drawer_menu/switch.dart';
-import 'package:ppkd_b7/day_15/list.dart';
-import 'package:ppkd_b7/day_15/list_model.dart';
-import 'package:ppkd_b7/day_15/list_of_map.dart';
+import 'package:ppkd_b7/study/day_14/tugas/drawer_menu/checkbox.dart';
+import 'package:ppkd_b7/study/day_14/tugas/drawer_menu/datepicker.dart';
+import 'package:ppkd_b7/study/day_14/tugas/drawer_menu/dropdown.dart';
+import 'package:ppkd_b7/study/day_14/tugas/drawer_menu/switch.dart';
+import 'package:ppkd_b7/study/day_15/list.dart';
+import 'package:ppkd_b7/study/day_15/list_model.dart';
+import 'package:ppkd_b7/study/day_15/list_of_map.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 class Tugas7HomePage extends StatefulWidget {

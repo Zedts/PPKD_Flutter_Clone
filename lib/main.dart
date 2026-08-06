@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:ppkd_b7/day_11/home.dart';
-import 'package:ppkd_b7/day_17/service/preference_handler.dart';
-import 'package:ppkd_b7/day_17/views/splash_screen.dart';
+import 'package:ppkd_b7/study/day_11/home.dart';
+import 'package:ppkd_b7/study/day_17/service/preference_handler.dart';
+import 'package:ppkd_b7/study/day_17/views/splash_screen.dart';
 
 // Fungsi main merupakan entry point utama dari aplikasi Flutter.
 // async digunakan karena kita perlu menunggu (await) inisialisasi async sebelum runApp dipanggil.

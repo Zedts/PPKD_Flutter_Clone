@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_11/home_2.dart';
+import 'package:ppkd_b7/study/day_11/home_2.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 /// [HomeRoutingDay11] adalah widget halaman (screen) tujuan pertama.

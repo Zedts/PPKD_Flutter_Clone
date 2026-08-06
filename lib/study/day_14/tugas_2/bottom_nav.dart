@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_14/tugas/drawer.dart';
-import 'package:ppkd_b7/day_14/tugas_2/screen/about.dart';
+import 'package:ppkd_b7/study/day_14/tugas/drawer.dart';
+import 'package:ppkd_b7/study/day_14/tugas_2/screen/about.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});

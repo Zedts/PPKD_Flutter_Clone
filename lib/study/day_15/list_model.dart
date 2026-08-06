@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_15/models/buah_mode.dart';
+import 'package:ppkd_b7/study/day_15/models/buah_mode.dart';
 
 class ListModel15 extends StatelessWidget {
   ListModel15({super.key});

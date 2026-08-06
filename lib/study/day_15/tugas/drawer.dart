@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_15/tugas/screen/tugas_list.dart';
-import 'package:ppkd_b7/day_15/tugas/screen/tugas_list_map.dart';
-import 'package:ppkd_b7/day_15/tugas/screen/tugas_list_model.dart';
-import 'package:ppkd_b7/day_16/text_form_field.dart';
-import 'package:ppkd_b7/day_16/tugas/text_form_field_tugas.dart';
+import 'package:ppkd_b7/study/day_15/tugas/screen/tugas_list.dart';
+import 'package:ppkd_b7/study/day_15/tugas/screen/tugas_list_map.dart';
+import 'package:ppkd_b7/study/day_15/tugas/screen/tugas_list_model.dart';
+import 'package:ppkd_b7/study/day_16/text_form_field.dart';
+import 'package:ppkd_b7/study/day_16/tugas/text_form_field_tugas.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 class DrawerTugasList extends StatefulWidget {

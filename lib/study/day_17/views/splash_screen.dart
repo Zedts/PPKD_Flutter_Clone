@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:ppkd_b7/day_13/bottom_nav.dart';
-import 'package:ppkd_b7/day_17/service/preference_handler.dart';
-import 'package:ppkd_b7/day_17/views/login_day_17.dart';
+import 'package:ppkd_b7/study/day_13/bottom_nav.dart';
+import 'package:ppkd_b7/study/day_17/service/preference_handler.dart';
+import 'package:ppkd_b7/study/day_17/views/login_day_17.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 // Widget SplashScreenDay17 berupa StatefulWidget untuk menangani proses async (delay & pengecekan session login saat awal aplikasi dibuka).

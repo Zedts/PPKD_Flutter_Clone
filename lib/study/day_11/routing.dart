@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ppkd_b7/day_11/home.dart';
+import 'package:ppkd_b7/study/day_11/home.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
 
 /// [RoutingDay11] adalah widget halaman utama untuk materi Routing dan Navigasi pada Day 11.
