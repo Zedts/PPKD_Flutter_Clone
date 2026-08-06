@@ -47,6 +47,9 @@ dependencies:
   # Lottie
   lottie: ^3.5.1
 
+  # Shared Preferences
+  shared_preferences: ^2.5.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

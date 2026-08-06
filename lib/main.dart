@@ -1,42 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:ppkd_b7/day_15/tugas/drawer.dart';
+import 'package:ppkd_b7/day_11/home.dart';
+import 'package:ppkd_b7/day_17/service/preference_handler.dart';
+import 'package:ppkd_b7/day_17/views/splash_screen.dart';
 
+// Fungsi main merupakan entry point utama dari aplikasi Flutter.
+// async digunakan karena kita perlu menunggu (await) inisialisasi async sebelum runApp dipanggil.
 void main() async {
-  await initializeDateFormatting(
-    "id_ID,", null
-  );
+  WidgetsFlutterBinding.ensureInitialized();
+  // Inisialisasi lokalisasi tanggal untuk format Indonesia (id_ID) agar DateFormat dapat menggunakan format lokal.
+  await initializeDateFormatting("id_ID,", null);
+  
+  // Inisialisasi SharedPreferences (Day 17) agar siap digunakan di seluruh aplikasi.
+  await PreferenceHandler.init();
+
   runApp(const MyApp());
 }
 
+// Widget utama aplikasi yang bersifat Stateless (tidak memiliki state internal yang berubah).
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Menyembunyikan banner "DEBUG" di pojok kanan atas layar.
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      // Mengatur tema global aplikasi.
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        // Menentukan skema warna dasar yang dihasilkan dari warna ungu (deepPurple).
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DrawerTugasList(),
+      // Rute awal yang akan ditampilkan pertama kali saat aplikasi dibuka.
+      initialRoute: "/",
+      // Definisi rute navigasi aplikasi (Push Named Routing).
+      routes: {
+        // Halaman Splash Screen Day 17 sebagai rute default (/).
+        // Halaman ini akan mengecek session login dan mengarahkan user ke LoginDay17 atau BottomNavDay13.
+        "/": (context) => const SplashScreenDay17(),
+        // Halaman utama day 11 (/home).
+        "/home": (context) => HomeRoutingDay11(),
+      },
     );
   }
 }
+
