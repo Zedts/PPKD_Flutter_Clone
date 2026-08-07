@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:ppkd_b7/tugas/day_17/services/preferenceHandler.dart';
-import 'package:ppkd_b7/tugas/day_17/views/splash_screen.dart';
+import 'package:ppkd_b7/study/day_18/services/preferenceHandler.dart';
+import 'package:ppkd_b7/study/day_18/views/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:ppkd_b7/tugas/day_17/services/preferenceHandler.dart';
+import 'package:ppkd_b7/study/day_18/views/login_day_18.dart';
+import 'package:ppkd_b7/study/day_18/services/preferenceHandler.dart';
 import 'package:ppkd_b7/extension/navigator.dart';
-import 'package:ppkd_b7/tugas/day_17/views/bottom_navigation.dart';
-import 'package:ppkd_b7/tugas/day_17/views/login.dart';
+import 'package:ppkd_b7/study/day_18/views/bottom_navigation.dart';
 
 class SplashScreenTugas extends StatefulWidget {
   const SplashScreenTugas({super.key});
@@ -25,7 +25,7 @@ class _SplashScreenTugasState extends State<SplashScreenTugas> {
     if (PreferenceHandler.isLogin == true) {
       context.push(const BottomTugas());
     } else {
-      context.push(const LoginTugas());
+      context.push(const LoginDay18SQFLITE());
     }
   }
 
